@@ -1,0 +1,11 @@
+import math
+P = int(input("Enter a Prime Number: "))
+G = int(input("Enter a Primitive Root: "))
+a = int(input("Enter a Private Key for Person 1: "))
+b = int(input("Enter a Private Key for Person 2: "))
+x = int(pow(G,a,P))
+y = int(pow(G,b,P))
+ka = int(pow(y,a,P))
+kb = int(pow(x,b,P))
+print("Secret Key for Person 1 is: ", ka)
+print("Secret Key for Person 2 is: ", kb)
